@@ -32,5 +32,15 @@ https://github.com/vuejs/vue-cli-plugin-vue-next
 
 ```
 
+## 뭐가 달라졌을까?🧐
+- src/main.js
+```
+import { createApp } from 'vue';
+import App from './App.vue';
+
+createApp(App).mount('#app');
+``` 
+> main.js 에서 Vue 를 사용하는게 아닌, createApp 함수를 사용하여 초기화 한다.
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
