@@ -42,5 +42,15 @@ createApp(App).mount('#app');
 ``` 
 > main.js 에서 Vue 를 사용하는게 아닌, createApp 함수를 사용하여 초기화 한다.
 
+- src/components/HelloWorld2.vue
+```
+<template>
+    <!-- 더 이상 root Element 로 감싸지 않아도 된다. -->
+    <h1>{{ msg }}</h1>
+    <h2>나는 헬로월드 2 이지렁</h2>
+</template>
+```
+> 기존에는 template 에 root element 로 감싸야 했었으나, 이제는 필요가 없다. (Fragment)   
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
