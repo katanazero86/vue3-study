@@ -40,7 +40,7 @@ import App from './App.vue';
 
 createApp(App).mount('#app');
 ``` 
-> main.js 에서 Vue 를 사용하는게 아닌, createApp 함수를 사용하여 초기화 한다.
+> main.js 에서 Vue 생성자 함수를 사용하는게 아닌, createApp 함수를 사용하여 초기화 한다.
 
 - src/components/HelloWorld2.vue
 ```
