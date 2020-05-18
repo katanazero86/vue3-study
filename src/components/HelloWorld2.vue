@@ -16,7 +16,7 @@
 
 <script>
 
-    import { ref } from 'vue'
+    import { ref, computed } from 'vue'
 
     const changeTestMessageRef = () => {
         // ref 객체에는 value 속성을 가지고 있음.
@@ -42,6 +42,27 @@
         return [testMessage2, changeTestMessage2];
     };
 
+    const computedExample = () => {
+      const testNumber = ref(1);
+      const testNumber2 = ref(2);
+
+      // read-only
+      const printNumber = computed(() => testNumber.value);
+
+      console.log(printNumber.value);
+      printNumber.value++; //error : Write operation failed: computed value is readonly
+
+      // get, set 함수를 구현하여 사용이 가능
+      // writable
+      const printNumber2 = computed({
+          get : () => testNumber2.value,
+          set : value => testNumber2.value = value
+      });
+      printNumber2.value = 100; // set 함수를 구현하면 쓰기 가능
+      console.log(printNumber2.value);
+
+    };
+
     export default {
         name: 'HelloWorld2',
         props: {
@@ -60,6 +81,9 @@
                 helloMessage = 'setTimeout change;';
                 console.log('setTimeout call..');
             }, 1000); // 1초후에 helloMessage 값을 변경
+
+            // computed
+            computedExample();
 
             // expose to template
             return {

@@ -131,7 +131,6 @@ createApp(App).mount('#app');
 ```
 > composition API 를 통한 반응형 데이터 정의(ref)
 
-
 - vue 2 기존
 ```
 <template>
@@ -152,5 +151,29 @@ createApp(App).mount('#app');
 
 ```
 
+- computed : 변경 불가능한 ref 객체를 반환받는다.
+```
+import { ref, computed } from 'vue';
+const computedExample = () => {
+      const testNumber = ref(1);
+      const testNumber2 = ref(2);
+
+      // read-only
+      const printNumber = computed(() => testNumber.value);
+
+      console.log(printNumber.value);
+      printNumber.value++; //error : Write operation failed: computed value is readonly
+
+      // get, set 함수를 구현하여 사용이 가능
+      // writable
+      const printNumber2 = computed({
+          get : () => testNumber2.value,
+          set : value => testNumber2.value = value
+      });
+      printNumber2.value = 100; // set 함수를 구현하면 쓰기 가능
+      console.log(printNumber2.value);
+
+};
+```
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
