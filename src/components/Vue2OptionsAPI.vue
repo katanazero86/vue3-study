@@ -1,5 +1,5 @@
 <template>
-    <div style="border: 1px dotted aquamarine">
+    <div style="border: 1px dotted aquamarine; margin: 4px">
         <p>
             Vue2OptionsAPI component
         </p>

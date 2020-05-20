@@ -19,3 +19,10 @@ export default function () {
         incrementCount
     }
 }
+
+
+// 이거도 될까?
+
+export const test = () => {
+  alert('test() in testReuse')
+};
