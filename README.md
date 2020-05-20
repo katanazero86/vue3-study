@@ -15,6 +15,9 @@ npm run build
 npm run lint
 ```
 
+## create velog post(korean)
+- [my velog post link](https://velog.io/@katanazero86/vue3-%EB%AF%B8%EB%A6%AC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0) 
+
 ## project setting history
 ```
 npm i -g @vue/cli
