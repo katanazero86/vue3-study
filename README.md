@@ -306,6 +306,8 @@ const computedExample = () => {
   destroyed -> onUnmounted <br>
   errorCaptured -> onErrorCaptured <br>
 > ![lifecycle](./image/lifecycle.png)
+> > - vue2 에서 크게 생명주기는 변화지 않았음
+> > - vue3 에서 생명주기 함수들은 on 이라는 접두사로 시작
 
 
 ### Customize configuration
