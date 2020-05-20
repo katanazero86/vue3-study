@@ -293,5 +293,18 @@ const computedExample = () => {
 - 반응형 상태(reactive data) 정의는 ref, reactive 를 활용
 - ref 는 원시타입 및 객체도 받으며, reactive 는 객체만 받음
 
+- vue 3 life cycle (on 이라는 접두사를 사용하는 형태로 바뀌고, creation 생명주기가 setup() 으로 대체)
+> ~~beforeCreate~~ -> use setup()<br>
+  ~~created~~ -> use setup() <br>
+  beforeMount -> onBeforeMount <br>
+  mounted -> onMounted <br>
+  beforeUpdate -> onBeforeUpdate <br>
+  updated -> onUpdated <br>
+  beforeDestroy -> onBeforeUnmount <br>
+  destroyed -> onUnmounted <br>
+  errorCaptured -> onErrorCaptured <br>
+> ![lifecycle](./image/lifecycle.png)
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
