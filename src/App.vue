@@ -12,6 +12,7 @@
     <HelloWorld3/>
     <HelloWatch/>
     <HelloLifeCycle/>
+    <Vue2OptionsAPI/>
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import HelloWatch from "./components/HelloWatch";
 import HelloLifeCycle from "./components/HelloLifeCycle";
 
 import { ref, isRef, isReactive, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted, onErrorCaptured } from 'vue'
+import Vue2OptionsAPI from "./components/Vue2OptionsAPI";
 
 const changeElementStyle = (targetElement) => {
   targetElement.style = 'border : 1px dotted black';
@@ -31,6 +33,7 @@ const changeElementStyle = (targetElement) => {
 export default {
   name: 'App',
   components: {
+    Vue2OptionsAPI,
     HelloLifeCycle,
     HelloWatch,
     HelloWorld3,
