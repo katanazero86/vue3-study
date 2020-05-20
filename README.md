@@ -309,6 +309,15 @@ const computedExample = () => {
 > > - vue2 에서 크게 생명주기는 변화지 않았음
 > > - vue3 에서 생명주기 함수들은 on 이라는 접두사로 시작
 
+- Vue2OptionsAPI vs Vue3CompositionAPI 컴포넌트를 통해 비교 가능
+```
+참조 : https://css-tricks.com/an-early-look-at-the-vue-3-composition-api-in-the-wild/
+composition API : 컴포넌트 로직을 유연하게 구성할 수 있는 API 모음
+
+- Vue2 컴포넌트가 커질수록 가독성이 어려워짐(Options API 의 구조가 복잡해짐 => data(), computed, watch, methods 로 분할되었으나 커지면 커질수록 명확한 구분이 없어지고 기능의 일부가 포함이 됨)
+- 재사용시 단점이 존재(mixin 이라는 좋은 방법이 있으나, 이름 충돌 및 병합 이슈 등이 있음)
+
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
