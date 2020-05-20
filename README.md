@@ -292,6 +292,8 @@ const computedExample = () => {
 
 - 반응형 상태(reactive data) 정의는 ref, reactive 를 활용
 - ref 는 원시타입 및 객체도 받으며, reactive 는 객체만 받음
+- isRef(), isReactive() 메서드는 반응형 객체가 ref 타입인지 reactive 타입인지 검사를 한 후 boolean 반환(src/App.vue 참조) 
+- watch 와 watchEffect 차이는 초기에 즉시실행이 되냐 안되냐 여부 (src/components/HelloWatch.vue 참조)
 
 - vue 3 life cycle (on 이라는 접두사를 사용하는 형태로 바뀌고, creation 생명주기가 setup() 으로 대체)
 > ~~beforeCreate~~ -> use setup()<br>

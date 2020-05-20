@@ -24,7 +24,7 @@ import HelloWorld3 from "./components/HelloWorld3";
 import HelloWatch from "./components/HelloWatch";
 import HelloLifeCycle from "./components/HelloLifeCycle";
 
-import { ref, isRef, isReactive, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted, onErrorCaptured } from 'vue'
+import { ref, reactive, isRef, isReactive, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted, onErrorCaptured } from 'vue'
 import Vue2OptionsAPI from "./components/Vue2OptionsAPI";
 import Vue3CompositionAPI from "./components/Vue3CompositionAPI";
 
@@ -48,8 +48,11 @@ export default {
   setup() {
 
     const testRef = ref('test');
-    const isRefResult = isRef(testRef);
-    const isReactiveResult = isReactive(testRef);
+
+    // eslint-disable-next-line no-unused-vars
+    const testReactive = reactive({text : 'test'});
+    const isRefResult = isRef(testRef); // check __v_isRef
+    const isReactiveResult = isReactive(testRef); // check __v_reactive
     const divElement = ref(null);
 
     console.log(`setup()`);
