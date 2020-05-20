@@ -239,7 +239,7 @@ const computedExample = () => {
             const [count, countIncrease] = countRef();
 
             // reactive state
-            // 객체를 받고, 반응 프록시 객체를 반환(=== Vue.observable() ) -> ES6 프록시 객체를 생각하면 안됌
+            // 객체를 받고, 반응 프록시 객체를 반환(=== Vue.observable() )
             // 이 상태변화 감지는 deep 하게 동작
             const reactiveStates = reactive({
                 text: 'hello world3!',

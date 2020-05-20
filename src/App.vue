@@ -4,10 +4,10 @@
       isRef : {{isRefResult}} <br>
       isReactive : {{isReactiveResult}}
       <button @click="changeElementStyle(divElement)">
-        element style 주기
+        element style 주기(ref 조작)
       </button>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <HelloWorld2 msg="나는 헬로월드2 컴포넌트야!"/>
     <HelloWorld3/>
     <HelloWatch/>
@@ -41,6 +41,7 @@ export default {
     HelloWatch,
     HelloWorld3,
     HelloWorld2,
+    // eslint-disable-next-line vue/no-unused-components
     HelloWorld
   },
 
