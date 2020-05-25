@@ -330,6 +330,11 @@ composition API : 컴포넌트 로직을 유연하게 구성할 수 있는 API �
 참조 : https://forum.vuejs.org/t/vuex4-usestore-returns-undefined-in-some-cases/96026
 npm install --save vuex@4.0.0-beta.2
 
+- 아래 경로 및 파일 참조
+/src/components/HelloStore.vue
+/store/*
+/src/main.js
+
 ```
 
 ### Customize configuration
