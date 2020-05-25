@@ -14,6 +14,8 @@
     <HelloLifeCycle/>
     <Vue2OptionsAPI/>
     <Vue3CompositionAPI/>
+    <hr/>
+    <HelloStore/>
   </div>
 </template>
 
@@ -27,6 +29,7 @@ import HelloLifeCycle from "./components/HelloLifeCycle";
 import { ref, reactive, isRef, isReactive, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted, onErrorCaptured } from 'vue'
 import Vue2OptionsAPI from "./components/Vue2OptionsAPI";
 import Vue3CompositionAPI from "./components/Vue3CompositionAPI";
+import HelloStore from "./components/HelloStore";
 
 const changeElementStyle = (targetElement) => {
   targetElement.style = 'border : 1px dotted black';
@@ -35,6 +38,7 @@ const changeElementStyle = (targetElement) => {
 export default {
   name: 'App',
   components: {
+    HelloStore,
     Vue3CompositionAPI,
     Vue2OptionsAPI,
     HelloLifeCycle,

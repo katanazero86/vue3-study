@@ -322,5 +322,15 @@ composition API : 컴포넌트 로직을 유연하게 구성할 수 있는 API �
 
 ```
 
+## vuex 4 beta 2 버전 맛보기
+
+```
+참조 : https://unpkg.com/browse/vuex@4.0.0-beta.2/
+참조 : https://github.com/u3u/vue-hooks
+참조 : https://forum.vuejs.org/t/vuex4-usestore-returns-undefined-in-some-cases/96026
+npm install --save vuex@4.0.0-beta.2
+
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
